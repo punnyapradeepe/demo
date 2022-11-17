@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <style>
+        .button{
+            cursor: pointer;
+        }
+    </style>
         <title>webdesign_challenge</title>
     </head>
-        <body>
+    <style>
+        #screen{
+            width: 500px;
+            height: 500px;
+            border: solid 1px;
+        }
+    </style>
+        <body style="background-color:rgb(173, 173, 255) ;">            
             <h1>HELLO STM</h1>
             <hr>
             <p>GET READY TO LEARN WITH US</p>
@@ -13,5 +25,29 @@
             <h5>Login</h5>
             <input type="text">
             <button type="submit">SUBMIT</button>
-        </body>
+
+            <div id="screen">
+
+            </div>
+            <button onclick="color('red')">Red</button>
+            <button onclick="color('green')">Green</button>
+            <button onclick="color('Orange')">Orange</button>
+            <button onclick="color('Yellow')">Yellow</button>
+
+            <script>
+                function color(col)
+                {
+                    document.getElementById("screen").style.background=col
+                }
+            </script>
+    
+
+
+        </body>
+
+               
+                
+        
+           
+        
 </html>
